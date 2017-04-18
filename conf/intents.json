@@ -1,11 +1,15 @@
 {
     "intents": [
         {
-            "intent": "WeatherReport",
+            "intent": "Iapyx",
             "slots": [
                 {
-                    "name": "aspect",
-                    "type": "LIST_OF_ASPECTS"
+                    "name": "action",
+                    "type": "LIST_OF_ACTIONS"
+                },
+                {
+                    "name": "product",
+                    "type": "LIST_OF_PRODUCTS"
                 }
             ]
         },

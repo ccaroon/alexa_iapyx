@@ -1,9 +1,9 @@
-LIST_OF_ASPECTS
+LIST_OF_ACTIONS
 ---------------
-humidity
-moon phase
-pressure
-rainfall
-temperature
-weather
-wind
+deploy
+spin
+test
+
+LIST_OF_PRODUCTS
+----------------
+pandora
