@@ -1,0 +1,22 @@
+{
+    "intents": [
+        {
+            "intent": "WeatherReport",
+            "slots": [
+                {
+                    "name": "aspect",
+                    "type": "LIST_OF_ASPECTS"
+                }
+            ]
+        },
+        {
+            "intent": "AMAZON.HelpIntent"
+        },
+        {
+            "intent": "AMAZON.StopIntent"
+        },
+        {
+            "intent": "AMAZON.CancelIntent"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+WeatherReport what's the {aspect}
+WeatherReport what is the {aspect}
+WeatherReport about the {aspect}
+WeatherReport to tell me the {aspect}
+WeatherReport what's the current {aspect}
+WeatherReport what is the current {aspect}
+WeatherReport about the current {aspect}
+WeatherReport to tell me the current {aspect}
+WeatherReport for the {aspect}
+WeatherReport what the {aspect} is
+WeatherReport for the current {aspect}
+WeatherReport what the current {aspect} is
+WeatherReport for the {aspect} report
+WeatherReport for the {aspect} information
+WeatherReport for the {aspect} info
+WeatherReport for the current {aspect} report
+WeatherReport for the current {aspect} information
+WeatherReport for the current {aspect} info
