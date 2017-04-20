@@ -1,15 +1,11 @@
 {
     "intents": [
         {
-            "intent": "Iapyx",
+            "intent": "TheButton",
             "slots": [
                 {
                     "name": "action",
                     "type": "LIST_OF_ACTIONS"
-                },
-                {
-                    "name": "product",
-                    "type": "LIST_OF_PRODUCTS"
                 }
             ]
         },

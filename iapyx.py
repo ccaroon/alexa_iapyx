@@ -74,7 +74,7 @@ def on_intent(request, session):
     intent_name = request['intent']['name']
 
     # Dispatch to your skill's intent handlers
-    if intent_name == "Iapyx":
+    if intent_name == "TheButton":
         return handle_iapyx(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return handle_help()
@@ -91,8 +91,8 @@ def handle_iapyx(intent, session):
 
     speech_output = ""
     if action == "deploy":
-        product = intent['slots']['product']['value']
-        speech_output = handle_deploy(product)
+        # product = intent['slots']['product']['value']
+        speech_output = handle_deploy(None)
     elif action == "spin":
         speech_output = handle_spin()
     elif action == "test":
@@ -107,17 +107,17 @@ def handle_iapyx(intent, session):
 
 def handle_deploy(product):
     call_particle_function("remoteCntl", "deploy")
-    stmt = "Iapyx Deploy %s" % (product)
+    stmt = "TheButton Deploy %s" % (product)
     return stmt
 
 def handle_spin():
-    call_particle_function("remoteCntl", "spinner")
-    stmt = "Iapyx Spin"
+    call_particle_function("remoteCntl", "spin")
+    stmt = "TheButton Spin"
     return stmt
 
 def handle_test():
     call_particle_function("remoteCntl", "test")
-    stmt = "Iapyx Test"
+    stmt = "TheButton Test"
     return stmt
 
 def handle_help():
@@ -125,7 +125,7 @@ def handle_help():
 
 def handle_session_ended():
     card_title = "Session Ended"
-    speech_output = "Thanks for using Iapyx"
+    speech_output = "Thanks for using TheButton"
     speechlet_response = build_speechlet_response(card_title, speech_output, None, True)
 
     return build_response({}, speechlet_response)

@@ -9,7 +9,7 @@ class TestIapyx(unittest.TestCase):
         'request': {
             'type': "IntentRequest",
             'intent': {
-                'name': "Iapyx",
+                'name': "TheButton",
                 'slots': {
                     'action': {
                         'name': 'action',
@@ -31,9 +31,9 @@ class TestIapyx(unittest.TestCase):
     }
 
     test_patterns = {
-        'test': "Iapyx Test",
-        'deploy': 'Iapyx Deploy pandora',
-        'spin': 'Iapyx Spin'
+        'test': "TheButton Test",
+        'deploy': 'TheButton Deploy pandora',
+        'spin': 'TheButton Spin'
     }
 
     # def setUp(self):
